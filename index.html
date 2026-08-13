@@ -132,17 +132,21 @@
   by Android when space is needed, and by uninstalling the App.</p>
 
   <h2>4. Device backup</h2>
-  <p>The App permits Android’s standard Auto Backup. If you have device backup enabled in
-  your Google account settings, Android may copy some or all of the App’s data — your
-  survey database and vessel photographs — to <strong>your own Google Drive backup</strong>.
-  This is a function of your device and your Google account, not of the App. We have no
-  access to that backup, and it does not count against your Drive storage.</p>
-  <p><strong>Please do not rely on it as a backup of your surveys.</strong> Android applies
-  a size limit per app and stops backing up once that limit is exceeded, without warning
-  you — and vessel photographs can reach it. If a survey matters, export it as a PDF and
-  keep it somewhere you control.</p>
-  <p>You can turn device backup off entirely in your device settings under Google →
-  Backup.</p>
+  <p>The App uses Android’s standard backup, which behaves differently in two situations.</p>
+  <p><strong>Backup to your Google account.</strong> If you have device backup switched on,
+  Android copies your <strong>survey database</strong> to your own Google Drive backup.
+  <strong>Vessel photographs are deliberately excluded.</strong> Android limits how much data
+  an app may back up, and photographs would exhaust that limit and silently stop the surveys
+  themselves from being backed up — and the surveys are the part that matters. We have no
+  access to this backup, and it does not count against your Drive storage.</p>
+  <p><strong>Moving to a new device.</strong> When you transfer directly from one Android
+  device to another, <strong>both</strong> your surveys and your vessel photographs come
+  across. A direct transfer has no size limit, so there is no reason to leave the
+  photographs behind.</p>
+  <p>In both cases this is a function of your device and your Google account, not of the
+  App. You can turn backup off in your device settings under Google → Backup. Backup only
+  happens if you have it enabled, so for a survey that really matters, still export the
+  PDF.</p>
 
   <h2>5. Analytics and crash reporting</h2>
   <p>The App includes two Google Firebase components. Neither is given any information by

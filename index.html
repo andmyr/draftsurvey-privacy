@@ -72,14 +72,20 @@
 <body>
 <main>
 
+
   <h1>Privacy Policy</h1>
   <p class="sub">Draft Survey Calculator · <code>ua.od.and.draftsurvey</code><br>
-  Effective 13 August 2026 · Last updated 13 August 2026</p>
+  Effective 23 September 2026 · Last updated 23 September 2026</p>
 
-  <p><strong>Draft Survey Calculator</strong> (the “App”) is a maritime draught-survey and
-  displacement calculator for ship officers and cargo surveyors. This policy explains what
-  the App does and does not do with your data. It applies to the Android version
-  distributed through Google Play.</p>
+  <p><strong>Draft Survey Calculator</strong> (the “App”, <code>ua.od.and.draftsurvey</code>)
+  is a maritime draught-survey and displacement calculator for ship officers and cargo
+  surveyors.</p>
+
+  <p>This policy explains what the App does and does not do with your data. It applies to
+  the <strong>Android version distributed through Google Play and the iOS version
+  distributed through the App Store</strong>. The two are built from the same code and
+  behave the same way in almost every respect; where a platform differs, this policy says so
+  and says which.</p>
 
   <p><strong>Who is responsible.</strong> The App is developed and published by Andrii
   Mushta, an independent developer (“we”, “us”). For any question about this policy or
@@ -88,13 +94,18 @@
   <div class="lede">
     <p><strong>The short version.</strong> The App works entirely offline. Every survey you
     create — vessel particulars, draft readings, calculations and photographs — is stored
-    <strong>only on your own device</strong>. We have no server, no user accounts, and no way
-    to see your surveys. We never sell or rent data to anyone.</p>
-    <p>The only data that leaves your device is anonymous app-usage and crash-diagnostic
-    information collected automatically by Google Firebase, described in section 5.</p>
+    <strong>on your own device</strong>, and <strong>we never receive any of it</strong>. We
+    have no server, no user accounts, and no way to see your surveys. We never sell or rent
+    data to anyone.</p>
+    <p>If your device’s own backup is switched on, a copy of your surveys goes to
+    <strong>your</strong> iCloud or Google account — yours, not ours, and we cannot reach it.
+    Section 4 says exactly what is included on each platform.</p>
+    <p>The only data the App itself sends anywhere is anonymous app-usage and
+    crash-diagnostic information collected automatically by Google Firebase, described
+    below.</p>
   </div>
 
-  <h2>1. Data you create in the App — stays on your device</h2>
+  <h2>1. Data you create in the App — we never receive it</h2>
   <p>The App stores the following in a private database on your device, accessible only to
   the App:</p>
   <ul>
@@ -105,65 +116,105 @@
       hydrostatic values, deductible quantities (ballast, fresh water, fuel, diesel,
       lubricating oil, other), water density and the resulting displacement figures.</li>
     <li><strong>Survey dates and times</strong> that you enter.</li>
-    <li><strong>Vessel photographs</strong> that you choose to take within the App.</li>
-    <li><strong>App settings</strong> — your chosen calculation accuracy, and whether the
-      paid unlock is active.</li>
+    <li><strong>Vessel photographs</strong> that you add to a vessel.</li>
+    <li><strong>App settings</strong> — your chosen calculation accuracy, your chosen
+      language, and whether the paid unlock is active.</li>
   </ul>
-  <p><strong>We do not receive any of this.</strong> It is not uploaded, synchronised, or
-  transmitted to us or to any third party. There is no account to sign in to, and no
-  networking code in the App that could send it anywhere.</p>
+  <p><strong>We do not receive any of this.</strong> The App does not upload, synchronise
+  or transmit it to us or to anyone else. There is no account to sign in to, and no
+  networking code in the App that could send it anywhere. The one way a copy does leave your
+  device is your own device backup, which is your account’s and not ours — see section 4.</p>
   <p>The App does <strong>not</strong> ask for, and has no field for, your name, e-mail
   address, telephone number, postal address, or the name of any client, charterer, agent or
   port.</p>
 
   <h2>2. Photographs</h2>
-  <p>If you attach a photograph to a vessel, the App opens your device camera and stores the
-  resulting image inside its own private storage area. Photographs are never uploaded and
-  are not included in the exported report. The App requests no access to your photo gallery
-  and declares no camera permission — it uses the system camera app, which returns only the
-  single image you took.</p>
+  <p>You may attach one photograph to a vessel. <strong>Where the picture comes from differs
+  by platform, and this is the one visible difference between the two versions:</strong></p>
+  <ul>
+    <li><strong>On Android</strong>, the App opens your device camera and keeps the picture
+      it takes. It declares no camera permission and asks for no access to your photo
+      gallery — it hands the job to the system camera app, which returns only the single
+      image you took.</li>
+    <li><strong>On iOS</strong>, the App opens the system photo picker and keeps the picture
+      you choose from your library. <strong>There is no camera in the iOS version.</strong>
+      The picker runs outside the App, so the App needs no photo-library permission and you
+      are shown no permission prompt; the App receives only the one image you selected and
+      never sees the rest of your library.</li>
+  </ul>
+  <p>On both platforms the picture is converted to JPEG and written into the App’s own
+  private storage area. Photographs are never uploaded, and they are not included in the
+  exported report — a certificate is text and figures only. Deleting the vessel deletes its
+  photograph, and so does uninstalling the App.</p>
 
   <h2>3. Reports you export</h2>
-  <p>When you export a draught survey certificate, the App generates a PDF inside its own
-  private cache and hands it to Android’s standard share dialogue. <strong>You</strong>
-  choose what happens to it — e-mail, messaging, cloud storage, or nothing at all. The App
-  itself transmits nothing; the file’s name and contents include the vessel name and the
-  survey figures, so please consider where you send it. Files left in the cache are removed
-  by Android when space is needed, and by uninstalling the App.</p>
+  <p>When you export a draught survey certificate, the App generates a PDF in its own
+  private temporary area and hands it to the system share sheet — Android’s share dialogue,
+  or the iOS share sheet. <strong>You</strong> choose what happens to it: e-mail, messaging,
+  cloud storage, or nothing at all. The App itself transmits nothing.</p>
+  <p>The file’s name and contents include the vessel name and the survey figures, so please
+  consider where you send it.</p>
+  <p>The generated file is temporary on both platforms and is removed by the operating
+  system without asking you — on Android when space is needed, on iOS from the temporary
+  directory it is written to. Uninstalling the App removes it in either case. A certificate
+  you want to keep is the copy you sent, not the one in the App.</p>
 
   <h2>4. Device backup</h2>
-  <p>The App uses Android’s standard backup, which behaves differently in two situations.</p>
-  <p><strong>Backup to your Google account.</strong> If you have device backup switched on,
-  Android copies your <strong>survey database</strong> to your own Google Drive backup.
-  <strong>Vessel photographs are deliberately excluded.</strong> Android limits how much data
-  an app may back up, and photographs would exhaust that limit and silently stop the surveys
-  themselves from being backed up — and the surveys are the part that matters. We have no
-  access to this backup, and it does not count against your Drive storage.</p>
-  <p><strong>Moving to a new device.</strong> When you transfer directly from one Android
-  device to another, <strong>both</strong> your surveys and your vessel photographs come
-  across. A direct transfer has no size limit, so there is no reason to leave the
+  <p>The App has no cloud of its own and synchronises nothing. Your device, however, may
+  copy the App’s data into <strong>your</strong> own backup, and what it copies is not the
+  same on the two platforms.</p>
+  <p><strong>Android — backup to your Google account.</strong> If you have device backup
+  switched on, Android copies your <strong>survey database</strong> to your own Google Drive
+  backup. <strong>Vessel photographs are deliberately excluded.</strong> Android limits how
+  much data an app may back up, and photographs would exhaust that limit and silently stop
+  the surveys themselves from being backed up — and the surveys are the part that matters.
+  This backup does not count against your Drive storage.</p>
+  <p><strong>Android — moving to a new device.</strong> When you transfer directly from one
+  Android device to another, <strong>both</strong> your surveys and your vessel photographs
+  come across. A direct transfer has no size limit, so there is no reason to leave the
   photographs behind.</p>
-  <p>In both cases this is a function of your device and your Google account, not of the
-  App. You can turn backup off in your device settings under Google → Backup. Backup only
-  happens if you have it enabled, so for a survey that really matters, still export the
-  PDF.</p>
+  <p><strong>iOS — iCloud Backup and computer backups.</strong> iOS backs up an app’s data
+  as a whole, and the App excludes nothing from it. So if iCloud Backup is on,
+  <strong>both your survey database and your vessel photographs are copied</strong> into
+  your own iCloud backup — unlike on Android, where the photographs are left out. The same
+  applies to a backup you make to your own computer. Exported PDF certificates are
+  <strong>not</strong> backed up: they are written to the temporary directory, which iOS
+  never includes. An iCloud backup counts against your iCloud storage.</p>
+  <p><strong>Why the platforms differ.</strong> Android caps how much any one app may place
+  in a cloud backup, and vessel photographs are large enough to exhaust that cap and push
+  the surveys out of the backup entirely. iCloud applies no such per-app cap — it uses the
+  storage you already pay for — so there is nothing to protect the surveys from, and leaving
+  the photographs in means a replaced iPhone comes back complete.</p>
+  <p>In every case this is a function of your device and your Apple or Google account, not
+  of the App. <strong>We have no access to any of these backups.</strong> You can switch
+  backup off or exclude the App from it — on iOS in Settings → [your name] → iCloud, on
+  Android under Settings → Google → Backup.</p>
+  <p>Backup only happens if you have it enabled, so for a survey that really matters, still
+  export the PDF.</p>
 
   <h2>5. Analytics and crash reporting</h2>
-  <p>The App includes two Google Firebase components. Neither is given any information by
-  the App itself — we set no user identifier, record no custom events, and attach nothing
-  about you or your surveys to them.</p>
+  <p>The App includes two Google Firebase components, on both platforms. Neither is given
+  any information by the App itself — we set no user identifier, record no custom events,
+  and attach nothing about you or your surveys to them.</p>
   <p><strong>Google Analytics for Firebase</strong> collects standard, automatic app-usage
   measurements: that the App was opened, session length and screen-level usage, an
   app-instance identifier, your device model, operating-system version, language and
-  country. Country is derived from your IP address; the App does not access device location
-  and declares no location permission.</p>
+  country. Country is derived from your IP address; the App does not access device location,
+  declares no location permission on Android, and asks for no location access on iOS.</p>
   <p><strong>Firebase Crashlytics</strong> collects diagnostic information if the App crashes
   or stops responding: the technical stack trace, the device model and operating-system
   version, and the state of the App at the moment of failure. This is used only to find and
   fix defects.</p>
-  <p><strong>We do not collect your advertising identifier.</strong> The App removes the
-  advertising-ID permission that the analytics library would otherwise add, because the App
-  shows no advertisements and does no profiling or remarketing.</p>
+  <p><strong>We do not collect your advertising identifier, on either platform.</strong> The
+  App shows no advertisements and does no profiling or remarketing.</p>
+  <ul>
+    <li>On <strong>Android</strong>, the App removes the advertising-ID permission that the
+      analytics library would otherwise add.</li>
+    <li>On <strong>iOS</strong>, the App does not include the optional Firebase component
+      that reads the advertising identifier (IDFA). It therefore never asks you for tracking
+      permission, and you will not see the “Allow App to track your activity” prompt — there
+      would be nothing for it to allow.</li>
+  </ul>
   <p>This data goes to Google, acting as our processor, and is governed by
   <a href="https://policies.google.com/privacy" rel="noopener">Google’s Privacy Policy</a>.
   We use it only in aggregate — to see whether the App is stable and which features are
@@ -174,13 +225,18 @@
 
   <h2>6. Purchases</h2>
   <p>The App is free to download. A single optional one-time purchase unlocks unlimited
-  vessels and surveys, and the reporting features.</p>
-  <p>The purchase is processed entirely by <strong>Google Play</strong>. We never see and
-  never receive your name, payment card, billing address or any other payment detail —
-  Google tells the App only whether the purchase exists. The App stores that answer as a
-  single yes/no value on your device. Your purchase history is held by Google under
+  vessels and surveys, and PDF export.</p>
+  <p><strong>The purchase is processed entirely by the store you installed the App from —
+  Google Play on Android, or Apple’s App Store on iOS.</strong> We never see and never
+  receive your name, payment card, billing address or any other payment detail. The store
+  tells the App only whether the purchase exists, and the App stores that answer as a single
+  yes/no value on your device. The purchase itself — including the receipt that proves it —
+  is held and checked by the store, never by us.</p>
+  <p>Your purchase history is held by whichever store processed it:
   <a href="https://policies.google.com/privacy" rel="noopener">Google’s Privacy Policy</a>
-  and can be reviewed in the Play Store.</p>
+  and the Play Store on Android, or
+  <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple’s Privacy Policy</a>
+  and your Apple Account on iOS.</p>
 
   <h2>7. What we do not do</h2>
   <ul>
@@ -195,7 +251,7 @@
 
   <h2>8. Legal basis and your rights</h2>
   <p>Where the EU/UK General Data Protection Regulation applies, our legal basis for the
-  analytics and crash reporting described in section 5 is our <strong>legitimate
+  analytics and crash-reporting described in section 5 is our <strong>legitimate
   interest</strong> in keeping the App stable and understanding how it is used, balanced
   against the limited and non-identifying nature of that data.</p>
   <p>You have the right to request access to, correction of, or erasure of personal data
@@ -209,16 +265,21 @@
     <li><strong>Analytics and crash data</strong> — to have it deleted, contact us at
       <a href="mailto:Draft_Survey@and.od.ua">Draft_Survey@and.od.ua</a> and we will submit a
       deletion request to Google. Because the data carries no name or account, please tell us
-      the approximate date and your device model so it can be located.</li>
+      the approximate date, your platform and your device model so it can be located.</li>
   </ul>
 
   <h2>9. Data security</h2>
-  <p>Your survey data is held in the App’s private storage area, which Android isolates from
-  other applications. Data transmitted by the Firebase components travels over encrypted
-  connections. No method of storage or transmission is completely secure, and we cannot
-  guarantee absolute security. Because the App holds no account and no server-side data, the
-  main protection for your surveys is your device’s own lock screen and encryption — we
-  recommend keeping both enabled.</p>
+  <p>Your survey data is held in the App’s own private storage area, which the operating
+  system isolates from other applications — on Android by the app sandbox, on iOS by the app
+  container, where files are additionally encrypted and stay unreadable until you first
+  unlock the device after it restarts.</p>
+  <p>Data transmitted by the Firebase components travels over encrypted connections. No
+  method of storage or transmission is completely secure, and we cannot guarantee absolute
+  security.</p>
+  <p>Because the App holds no account and no server-side data, the main protection for your
+  surveys is your device’s own passcode or lock screen and its encryption — we recommend
+  keeping both enabled. On iOS the file encryption described above depends on a passcode
+  being set.</p>
 
   <h2>10. Children</h2>
   <p>The App is a professional tool for maritime officers and cargo surveyors. It is not
@@ -228,8 +289,9 @@
 
   <h2>11. Changes to this policy</h2>
   <p>We may update this policy as the App changes. The current version is always the one at
-  this address, and the “last updated” date shows when it changed. Material changes will
-  also be noted in the App’s release notes on Google Play.</p>
+  this address, and the “last updated” date below shows when it changed. Material changes
+  will also be noted in the App’s release notes — on Google Play for the Android version,
+  and on the App Store for the iOS version.</p>
 
   <h2>12. Contact</h2>
   <p>Questions, requests or complaints about this policy:
@@ -237,7 +299,7 @@
 
   <footer>
     Draft Survey Calculator · <code>ua.od.and.draftsurvey</code><br>
-    Effective 13 August 2026 · Last updated 13 August 2026
+    Effective 23 September 2026 · Last updated 23 September 2026
   </footer>
 
 </main>
